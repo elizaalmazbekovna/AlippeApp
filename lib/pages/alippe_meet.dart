@@ -1,8 +1,7 @@
-
-
 import 'package:alippe_app/pages/googlemeet_page.dart';
 import 'package:alippe_app/pages/live_page.dart';
-import 'package:alippe_app/pages/saved_stream_page.dart';
+import 'package:alippe_app/pages/living_meet.dart';
+
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:carousel_slider/carousel_slider.dart';
@@ -64,7 +63,7 @@ class _AlippeMeetState extends State<AlippeMeet> {
                             Navigator.push(
                               context,
                               MaterialPageRoute(
-                                  builder: (context) => SavedStreamsPage()),
+                                  builder: (context) => LivingMeet()),
                             );
                           },
                         ),
