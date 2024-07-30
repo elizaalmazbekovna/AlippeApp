@@ -1,10 +1,29 @@
 import 'package:flutter/material.dart';
 import 'package:webview_flutter/webview_flutter.dart';
+import 'package:webview_flutter_wkwebview/webview_flutter_wkwebview.dart';
+import 'dart:io' show Platform;
 
-class GoogleMeetPage extends StatelessWidget {
+class GoogleMeetPage extends StatefulWidget {
   final String link;
 
   GoogleMeetPage({required this.link});
+
+  @override
+  _GoogleMeetPageState createState() => _GoogleMeetPageState();
+}
+
+class _GoogleMeetPageState extends State<GoogleMeetPage> {
+  late final WebViewController _controller;
+
+  // @override
+  // void initState() {
+  //   super.initState();
+  //   if (Platform.isAndroid) {
+  //     WebView.platform = SurfaceAndroidWebView();
+  //     } else if (Platform.isIOS || Platform.isMacOS) {
+  //        WebView.platform = WebKitWebViewPlatform();
+  //   }
+  // }
 
   @override
   Widget build(BuildContext context) {
@@ -19,10 +38,12 @@ class GoogleMeetPage extends StatelessWidget {
           },
         ),
       ),
-      body: WebView(
-        initialUrl: 'https://meet.google.com/',
-        javascriptMode: JavascriptMode.unrestricted,
-      ),
+      // body: WebView(
+      //   initialUrl: widget.link,
+      //   javascriptMode: JavascriptMode.unrestricted,
+      //   onWebViewCreated: (WebViewController webViewController) {
+      //     _controller = webViewController;
+      //   },
     );
   }
 }

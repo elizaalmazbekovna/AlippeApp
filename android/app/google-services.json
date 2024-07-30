@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "499287245065",
+    "project_id": "alippeapp-b420e",
+    "storage_bucket": "alippeapp-b420e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:499287245065:android:31f0c5674153abedf293d8",
+        "android_client_info": {
+          "package_name": "com.alippeapp.events_demo"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAhQUEc-3eezD5P_BpFDDHSLUBEJJfROWQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
